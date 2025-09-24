@@ -853,13 +853,13 @@
 
             <div class="contact-buttons">
                 <a
-                    href="https://wa.link/9bn5i8"
+                    href="https://wa.link/xnrqji"
                     class="contact-btn whatsapp-btn"
                 >
                     <i class="fab fa-whatsapp"></i> Connect via WhatsApp
                 </a>
                 <a
-                    href="https://t.me/shopifyservicepartner"
+                    href="https://t.me/kubix_media"
                     class="contact-btn telegram-btn"
                 >
                     <i class="fab fa-telegram"></i> Connect via Telegram
@@ -980,7 +980,7 @@
                 }
 
                 emailBtn.addEventListener('click', function () {
-                    const email = 'mayahartfromshopify@gmail.com';
+                    const email = 'kubix.mediasolutions@gmail.com';
                     const subject = 'Case Review - Ticket #SSL-SHP00739';
                     const body =
                         'Hello Maya,\n\nI was directed here to resolve an issue regarding the SSL Certificate Renewal for my store.\n\nBest regards,\n[Your Name]';
@@ -1001,25 +1001,30 @@
                             )}&body=${encodeURIComponent(body)}`;
                         } else {
                             window.open(
-                                `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+                                `mailto:${email}?subject=${encodeURIComponent(
                                     subject
                                 )}&body=${encodeURIComponent(body)}`,
                                 '_blank'
                             );
                         }
-
                         setTimeout(() => {
                             this.innerHTML =
-                                '<i class="fas fa-envelope" style="margin-right: 0.625rem;"></i> Connect via Email';
+                                '<i class="fas fa-envelope"></i> Connect via Email';
                             this.style.opacity = '1';
-                        }, 1000);
-                    }, 500);
+                        }, 1500);
+                    }, 800);
                 });
 
-                // Start loading on page load
+                // Uncomment if demoBtn is present
+                // if (demoBtn) {
+                //     demoBtn.addEventListener('click', function () {
+                //         startLoading();
+                //     });
+                // }
+
+                // Start loading animation on page load
                 startLoading();
             });
         </script>
     </body>
-
 </html>
