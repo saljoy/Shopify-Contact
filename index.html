@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Compliance Advisor Connection</title>
+        <title>Security Specialist Connection</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -284,19 +284,19 @@
                 animation: dots 2s infinite;
             }
 
-            /* Advisor Container */
-            .advisor-container {
+            /* Specialist Container */
+            .Specialist-container {
                 transform: scale(0.95);
                 opacity: 0;
                 transition: var(--transition-slow);
             }
 
-            .advisor-container.show {
+            .Specialist-container.show {
                 transform: scale(1);
                 opacity: 1;
             }
 
-            .advisor-header {
+            .Specialist-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -322,8 +322,8 @@
                 animation: pulse-badge 2s infinite;
             }
 
-            /* Advisor Info Card */
-            .advisor-info {
+            /* Specialist Info Card */
+            .Specialist-info {
                 background: linear-gradient(135deg, #f8fafc, #f1f5f9);
                 border-radius: 0.75rem;
                 padding: 1.75rem;
@@ -331,7 +331,7 @@
                 border: 1px solid #e2e8f0;
             }
 
-            .advisor-profile {
+            .Specialist-profile {
                 display: flex;
                 align-items: center;
                 margin-bottom: 1.5rem;
@@ -339,7 +339,7 @@
                 border-bottom: 1px solid #e2e8f0;
             }
 
-            .advisor-avatar {
+            .Specialist-avatar {
                 width: 4.5rem;
                 height: 4.5rem;
                 border-radius: 50%;
@@ -359,7 +359,7 @@
                 position: relative;
             }
 
-            .advisor-avatar::after {
+            .Specialist-avatar::after {
                 content: '';
                 position: absolute;
                 bottom: 2px;
@@ -371,25 +371,25 @@
                 border-radius: 50%;
             }
 
-            .advisor-details {
+            .Specialist-details {
                 text-align: left;
                 flex: 1;
             }
 
-            .advisor-details h3 {
+            .Specialist-details h3 {
                 font-weight: 700;
                 font-size: 1.25rem;
                 margin-bottom: 0.375rem;
                 color: var(--primary-dark);
             }
 
-            .advisor-details p {
+            .Specialist-details p {
                 color: #64748b;
                 font-size: 0.925rem;
                 margin-bottom: 0.5rem;
             }
 
-            .advisor-badges {
+            .Specialist-badges {
                 display: flex;
                 gap: 0.5rem;
                 flex-wrap: wrap;
@@ -682,21 +682,21 @@
                     grid-template-columns: 1fr;
                 }
 
-                .advisor-profile {
+                .Specialist-profile {
                     flex-direction: column;
                     text-align: center;
                 }
 
-                .advisor-avatar {
+                .Specialist-avatar {
                     margin-right: 0;
                     margin-bottom: 1rem;
                 }
 
-                .advisor-details {
+                .Specialist-details {
                     text-align: center;
                 }
 
-                .advisor-badges {
+                .Specialist-badges {
                     justify-content: center;
                 }
             }
@@ -777,9 +777,9 @@
             </div>
         </div>
 
-        <!-- Advisor Container -->
-        <div id="advisor-container" class="container advisor-container hidden">
-            <div class="advisor-header">
+        <!-- Specialist Container -->
+        <div id="Specialist-container" class="container Specialist-container hidden">
+            <div class="Specialist-header">
                 <div
                     style="
                         display: flex;
@@ -802,14 +802,14 @@
             <h1 class="title">Shopify Specialist</h1>
             <p class="subtitle">Helping Stores Stay Protected</p>
 
-            <div class="advisor-info">
-                <div class="advisor-profile">
-                    <div class="advisor-avatar">SA</div>
-                    <div class="advisor-details">
+            <div class="Specialist-info">
+                <div class="Specialist-profile">
+                    <div class="Specialist-avatar">SA</div>
+                    <div class="Specialist-details">
                         <h3>Brian J.</h3>
                         <p>Shopify Security Specialist</p>
-                        <div class="advisor-badges">
-                            <span class="badge badge-blue"> Senior Advisor</span>
+                        <div class="Specialist-badges">
+                            <span class="badge badge-blue"> Senior Specialist</span>
                             <span class="badge badge-green">6+ years</span>
                         </div>
                     </div>
@@ -839,7 +839,7 @@
 
                 <div class="connection-note">
                     <div class="status-dot"></div>
-                    <span>Connect with your assigned advisor within the next 48 hours to review your security status</span>
+                    <span>Connect with your assigned Specialist within the next 48 hours to review your security status</span>
                 </div>
             </div>
 
@@ -874,7 +874,7 @@
         <div id="form-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,41,59,0.25); z-index:999; align-items:center; justify-content:center;">
             <div style="background:white; border-radius:1.25rem; max-width:420px; width:95%; margin:auto; padding:2.5rem 2rem 2rem 2rem; position:relative; box-shadow:0 8px 32px rgba(36,161,222,0.12);">
                 <button id="close-modal" style="position:absolute; top:1.2rem; right:1.2rem; background:none; border:none; font-size:2rem; color:#64748b; cursor:pointer; transition:color 0.2s;"><i class="fas fa-times"></i></button>
-                <h2 style="font-size:1.35rem; font-weight:700; color:#2d3538; margin-bottom:1.2rem; text-align:center;">Contact Support Advisor</h2>
+                <h2 style="font-size:1.35rem; font-weight:700; color:#2d3538; margin-bottom:1.2rem; text-align:center;">Contact Support Specialist</h2>
                 <form id="contactForm" style="margin-top:0.5rem;">
                     <input type="hidden" id="methodField">
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
@@ -922,8 +922,8 @@
                 const progressText = document.getElementById('progress-text');
                 const loadingContainer =
                     document.getElementById('loading-container');
-                const advisorContainer =
-                    document.getElementById('advisor-container');
+                const SpecialistContainer =
+                    document.getElementById('Specialist-container');
                 const statusMessage = document.getElementById('status-message');
                 const emailBtn = document.getElementById('email-btn');
                 const demoBtn = document.getElementById('demo-btn');
@@ -931,7 +931,7 @@
                 const statusMessages = [
                     'Initializing secure connection...',
                     'Verifying credentials...',
-                    'Analyzing compliance history...',
+                    'Analyzing Security history...',
                     'Checking partner records...',
                     'Validating ticket details...',
                     'Optimizing connection...',
@@ -956,8 +956,8 @@
                     loadingContainer.classList.remove('hidden');
                     loadingContainer.style.opacity = '1';
                     loadingContainer.style.transform = 'scale(1)';
-                    advisorContainer.classList.add('hidden');
-                    advisorContainer.classList.remove('show');
+                    SpecialistContainer.classList.add('hidden');
+                    SpecialistContainer.classList.remove('show');
 
                     progressInterval = setInterval(() => {
                         progress += Math.random() * 2.5 + 1.5;
@@ -980,10 +980,10 @@
 
                                 setTimeout(() => {
                                     loadingContainer.classList.add('hidden');
-                                    advisorContainer.classList.remove('hidden');
+                                    SpecialistContainer.classList.remove('hidden');
 
                                     setTimeout(() => {
-                                        advisorContainer.classList.add('show');
+                                        SpecialistContainer.classList.add('show');
                                     }, 50);
                                 }, 300);
                             }, 1000);
@@ -1063,3 +1063,4 @@
         </script>
     </body>
 </html>
+
