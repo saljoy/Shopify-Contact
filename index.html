@@ -726,9 +726,9 @@
                 </div>
             </div>
 
-            <h1 class="title">Compliance Case Review</h1>
+            <h1 class="title">Shopify Account Review</h1>
             <p class="subtitle">
-                Connecting you with a dedicated Shopify advisor<span
+                Checking Available Ticket<span
                     class="loading-dots"
                 ></span>
             </p>
@@ -754,21 +754,21 @@
                         class="fas fa-shield-alt"
                         style="color: var(--primary-dark-green)"
                     ></i>
-                    <span>Verifying compliance details</span>
+                    <span>Verifying Ticket ID details</span>
                 </div>
                 <div class="status-step">
                     <i
                         class="fas fa-search"
                         style="color: var(--primary-green)"
                     ></i>
-                    <span>Reviewing case history</span>
+                    <span>Reviewing Account History</span>
                 </div>
                 <div class="status-step">
                     <i
                         class="fas fa-user-tie"
                         style="color: var(--primary-dark)"
                     ></i>
-                    <span>Locating available advisor</span>
+                    <span>Authenticating Connection</span>
                 </div>
             </div>
 
@@ -799,20 +799,18 @@
                 </div>
             </div>
 
-            <h1 class="title">Your Support Advisor</h1>
-            <p class="subtitle">Ready to assist with your case</p>
+            <h1 class="title">Shopify Specialist</h1>
+            <p class="subtitle">Helping Stores Stay Protected</p>
 
             <div class="advisor-info">
                 <div class="advisor-profile">
                     <div class="advisor-avatar">SA</div>
                     <div class="advisor-details">
-                        <h3>Support Advisor</h3>
-                        <p>Kubix Solutions</p>
+                        <h3>Brian J.</h3>
+                        <p>Shopify Security Specialist</p>
                         <div class="advisor-badges">
-                            <span class="badge badge-blue"
-                                >Ali S. | Senior Advisor</span
-                            >
-                            <span class="badge badge-green">4+ years</span>
+                            <span class="badge badge-blue"> Senior Advisor</span>
+                            <span class="badge badge-green">6+ years</span>
                         </div>
                     </div>
                 </div>
@@ -820,7 +818,7 @@
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-label">Ticket No.</div>
-                        <div class="stat-value">#SSL-SHP00739</div>
+                        <div class="stat-value">SEC-LA-247861</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Partner ID</div>
@@ -828,15 +826,12 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Cases Resolved</div>
-                        <div class="stat-value">1,085</div>
+                        <div class="stat-value">3,085</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-label">Status</div>
                         <div class="stat-value green">
-                            <i
-                                class="fas fa-circle"
-                                style="font-size: 0.5rem; margin-right: 0.25rem"
-                            ></i>
+                            <i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 0.25rem"></i>
                             Active
                         </div>
                     </div>
@@ -844,26 +839,14 @@
 
                 <div class="connection-note">
                     <div class="status-dot"></div>
-                    <span
-                        >Connect with your assigned advisor within the next 24
-                        hours to validate your session</span
-                    >
+                    <span>Connect with your assigned advisor within the next 48 hours to review your security status</span>
                 </div>
             </div>
 
             <div class="contact-buttons">
-                <a
-                    href="https://wa.link/xnrqji"
-                    class="contact-btn whatsapp-btn"
-                >
+                <button id="whatsapp-btn" class="contact-btn whatsapp-btn">
                     <i class="fab fa-whatsapp"></i> Connect via WhatsApp
-                </a>
-                <a
-                    href="https://t.me/kubix_media"
-                    class="contact-btn telegram-btn"
-                >
-                    <i class="fab fa-telegram"></i> Connect via Telegram
-                </a>
+                </button>
                 <button id="email-btn" class="contact-btn gmail-btn">
                     <i class="fas fa-envelope"></i> Connect via Email
                 </button>
@@ -886,6 +869,52 @@
             <i class="fas fa-redo" style="margin-right: 0.5rem"></i>
             Restart Demo
         </button> -->
+
+        <!-- Modern Modal for the form (only one instance, styled) -->
+        <div id="form-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(30,41,59,0.25); z-index:999; align-items:center; justify-content:center;">
+            <div style="background:white; border-radius:1.25rem; max-width:420px; width:95%; margin:auto; padding:2.5rem 2rem 2rem 2rem; position:relative; box-shadow:0 8px 32px rgba(36,161,222,0.12);">
+                <button id="close-modal" style="position:absolute; top:1.2rem; right:1.2rem; background:none; border:none; font-size:2rem; color:#64748b; cursor:pointer; transition:color 0.2s;"><i class="fas fa-times"></i></button>
+                <h2 style="font-size:1.35rem; font-weight:700; color:#2d3538; margin-bottom:1.2rem; text-align:center;">Contact Support Advisor</h2>
+                <form id="contactForm" style="margin-top:0.5rem;">
+                    <input type="hidden" id="methodField">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                        <div>
+                            <label style="font-size:0.95rem; color:#475569;">Ticket ID</label>
+                            <input id="ticketInput" type="text" value="SEC-LA-247861" readonly style="width:100%;padding:0.6rem;border-radius:0.5rem;border:1px solid #e2e8f0;background:#f8fafc;margin-top:0.3rem;">
+                        </div>
+                        <div>
+                            <label style="font-size:0.95rem; color:#475569;">Store URL</label>
+                            <input id="storeInput" type="text" placeholder="yourstore.myshopify.com" style="width:100%;padding:0.6rem;border-radius:0.5rem;border:1px solid #e2e8f0;background:#f8fafc;margin-top:0.3rem;">
+                        </div>
+                        <div>
+                            <label style="font-size:0.95rem; color:#475569;">Email address</label>
+                            <input id="emailInput" type="email" required placeholder="you@example.com" style="width:100%;padding:0.6rem;border-radius:0.5rem;border:1px solid #e2e8f0;background:#f8fafc;margin-top:0.3rem;">
+                        </div>
+                        <div>
+                            <label style="font-size:0.95rem; color:#475569;">Issue type</label>
+                            <select id="issueInput" required style="width:100%;padding:0.6rem;border-radius:0.5rem;border:1px solid #e2e8f0;background:#f8fafc;margin-top:0.3rem;">
+                                <option value="">Select an issue</option>
+                                <option>Security Threat</option>
+                                <option>Checkout or Payment Issues</option>
+                                <option>Store Visibility / SEO</option>
+                                <option>Saler's Permit</option>
+                                <option>Low Sales</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="margin-top:1rem;">
+                        <label style="font-size:0.95rem; color:#475569;">Your name</label>
+                        <input id="nameInput" type="text" required style="width:100%;padding:0.6rem;border-radius:0.5rem;border:1px solid #e2e8f0;background:#f8fafc;margin-top:0.3rem;">
+                    </div>
+                    <div style="margin-top:1rem;">
+                        <label style="font-size:0.95rem; color:#475569;">Message</label>
+                        <textarea id="messageInput" rows="4" required placeholder="Summary of the issue..." style="width:100%;padding:0.6rem;border-radius:0.5rem;border:1px solid #e2e8f0;background:#f8fafc;margin-top:0.3rem;"></textarea>
+                    </div>
+                    <button type="submit" style="margin-top:1.5rem;width:100%;padding:0.8rem 0;border-radius:0.5rem;background:linear-gradient(90deg,#24a1de,#96bf48);color:white;font-weight:600;font-size:1.05rem;border:none;box-shadow:0 2px 8px rgba(36,161,222,0.08);cursor:pointer;transition:background 0.2s;">Send &amp; Connect</button>
+                </form>
+            </div>
+        </div>
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -979,54 +1008,58 @@
                     }, 900);
                 }
 
-                emailBtn.addEventListener('click', function () {
-                    const email = 'kubix.mediasolutions@gmail.com';
-                    const subject = 'Case Review - Ticket #SSL-SHP00739';
-                    const body =
-                        'Hello Ali,\n\nI was directed here to resolve an issue regarding the SSL Certificate Renewal for my store. Here is my ticket ID (insert Ticket ID).\n\nBest regards,\n[Your Name]';
+               
 
-                    const isMobile =
-                        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-                            navigator.userAgent
-                        );
+                // Modal logic
+                const formModal = document.getElementById('form-modal');
+                const closeModal = document.getElementById('close-modal');
+                const contactForm = document.getElementById('contactForm');
+                const methodField = document.getElementById('methodField');
 
-                    this.innerHTML =
-                        '<i class="fas fa-spinner fa-spin" style="margin-right: 0.625rem;"></i> Opening...';
-                    this.style.opacity = '0.8';
-
-                    setTimeout(() => {
-                        if (isMobile) {
-                            window.location.href = `mailto:${email}?subject=${encodeURIComponent(
-                                subject
-                            )}&body=${encodeURIComponent(body)}`;
-                        } else {
-                            window.open(
-                                `mailto:${email}?subject=${encodeURIComponent(
-                                    subject
-                                )}&body=${encodeURIComponent(body)}`,
-                                '_blank'
-                            );
-                        }
-                        setTimeout(() => {
-                            this.innerHTML =
-                                '<i class="fas fa-envelope"></i> Connect via Email';
-                            this.style.opacity = '1';
-                        }, 1500);
-                    }, 800);
+                document.getElementById('whatsapp-btn').addEventListener('click', function () {
+                    methodField.value = 'whatsapp';
+                    formModal.style.display = 'flex';
                 });
 
-                // Uncomment if demoBtn is present
-                // if (demoBtn) {
-                //     demoBtn.addEventListener('click', function () {
-                //         startLoading();
-                //     });
-                // }
+                document.getElementById('email-btn').addEventListener('click', function () {
+                    methodField.value = 'email';
+                    formModal.style.display = 'flex';
+                });
 
-                // Start loading animation on page load
+                closeModal.addEventListener('click', function () {
+                    formModal.style.display = 'none';
+                });
+
+                contactForm.onsubmit = function(e){
+                    e.preventDefault();
+                    const method = methodField.value;
+                    const ticket = document.getElementById('ticketInput').value;
+                    const store = document.getElementById('storeInput').value;
+                    const email = document.getElementById('emailInput').value;
+                    const issue = document.getElementById('issueInput').value;
+                    const name = document.getElementById('nameInput').value;
+                    const message = document.getElementById('messageInput').value;
+                    const body = encodeURIComponent(
+                        'Ticket: ' + ticket + '\n' +
+                        'Name: ' + name + '\n' +
+                        'Email: ' + email + '\n' +
+                        'Store: ' + store + '\n' +
+                        'Issue: ' + issue + '\n' +
+                        'Message: ' + message
+                    );
+                    let url = '';
+                    if(method === 'whatsapp') {
+                        url = 'https://wa.me/12027739562?text=' + body;
+                    } else {
+                        url = 'mailto:specialist.atchat@gmail.com?subject=Support Request&body=' + body;
+                    }
+                    formModal.style.display = 'none';
+                    window.open(url, '_blank');
+                };
+
+                // Start loading on page load
                 startLoading();
             });
         </script>
     </body>
 </html>
-
-
